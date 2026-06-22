@@ -19,6 +19,7 @@ export const navItems = [
   { label: "品牌", href: "#essence" },
   { label: "服務", href: "#services" },
   { label: "方法", href: "#method" },
+  { label: "計算機", href: "#calculator" },
   { label: "預約", href: "#booking" }
 ];
 

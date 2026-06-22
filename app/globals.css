@@ -377,6 +377,29 @@ p {
   color: rgba(245, 241, 233, 0.74);
 }
 
+.calculator-showcase {
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(251, 248, 241, 0.96), rgba(232, 228, 218, 0.92)),
+    repeating-linear-gradient(45deg, rgba(168, 120, 92, 0.08) 0 12px, rgba(119, 130, 117, 0.07) 12px 24px);
+}
+
+.calculator-showcase__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 420px);
+  gap: clamp(30px, 6vw, 84px);
+  align-items: center;
+}
+
+.calculator-showcase__copy {
+  max-width: 640px;
+}
+
+.calculator-showcase__copy p:not(.eyebrow) {
+  color: rgba(37, 48, 46, 0.68);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -611,10 +634,15 @@ details p {
   .story-grid,
   .booking-grid,
   .faq-grid,
+  .calculator-showcase__grid,
   .pillar-grid,
   .service-grid,
   .info-list {
     grid-template-columns: 1fr;
+  }
+
+  .calculator-showcase__copy {
+    max-width: none;
   }
 
   .qr-card {

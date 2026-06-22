@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Download, MapPin, Phone, QrCode, Sparkles } from "lucide-react";
+import { CuteCalculator } from "@/app/calculator/CuteCalculator";
 import { BrandMark } from "@/components/BrandMark";
 import { MobileActions, ShareIconButton } from "@/components/MobileActions";
 import {
@@ -123,6 +124,19 @@ export default function Home() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section calculator-showcase" id="calculator" aria-labelledby="calculator-section-title">
+        <div className="section__inner calculator-showcase__grid">
+          <div className="calculator-showcase__copy">
+            <p className="eyebrow">Mini Tool</p>
+            <h2 id="calculator-section-title">可愛計算機，直接在主頁使用。</h2>
+            <p>
+              保留柔和可愛的操作感，適合手機快速計算，也能用鍵盤輸入數字與運算符號。
+            </p>
+          </div>
+          <CuteCalculator variant="embedded" />
         </div>
       </section>
 
