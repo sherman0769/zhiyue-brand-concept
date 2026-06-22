@@ -2,6 +2,7 @@ export const brand = {
   nameZh: "質悅",
   nameEn: "ZHI YUE",
   descriptor: "Hair & Scalp Aesthetic",
+  siteUrl: "https://zhiyue-brand-concept.vercel.app",
   tagline: "為髮質而生，為悅己而來。",
   locationLabel: "台中西區美術園道",
   address: "台中市西區五權一街33號",

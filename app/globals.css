@@ -457,6 +457,48 @@ details p {
   gap: 12px;
 }
 
+.qr-card {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  width: min(100%, 320px);
+  margin-left: auto;
+  padding: 20px;
+  text-align: center;
+  background: #fbf8f1;
+  border: 1px solid rgba(37, 48, 46, 0.13);
+  border-radius: 8px;
+}
+
+.qr-card__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #344740;
+  font-weight: 700;
+}
+
+.qr-card img {
+  width: min(220px, 100%);
+  height: auto;
+  border: 1px solid rgba(37, 48, 46, 0.12);
+  border-radius: 6px;
+}
+
+.qr-card p {
+  margin: 0;
+  color: rgba(37, 48, 46, 0.68);
+  font-size: 0.92rem;
+}
+
+.qr-card a {
+  max-width: 100%;
+  color: #a8785c;
+  font-size: 0.82rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
 .info-list {
   grid-column: 1 / -1;
   display: grid;
@@ -573,6 +615,11 @@ details p {
   .service-grid,
   .info-list {
     grid-template-columns: 1fr;
+  }
+
+  .qr-card {
+    width: 100%;
+    margin-left: 0;
   }
 
   .gallery-grid {

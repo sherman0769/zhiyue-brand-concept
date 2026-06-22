@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Download, MapPin, Phone, Sparkles } from "lucide-react";
+import { Download, MapPin, Phone, QrCode, Sparkles } from "lucide-react";
 import { BrandMark } from "@/components/BrandMark";
 import { MobileActions, ShareIconButton } from "@/components/MobileActions";
 import {
@@ -208,6 +208,21 @@ export default function Home() {
               APP 下載待確認
             </button>
           </div>
+          <aside className="qr-card" aria-label="網站 QR code">
+            <div className="qr-card__label">
+              <QrCode size={18} aria-hidden="true" />
+              <span>手機掃描</span>
+            </div>
+            <Image
+              src="/images/generated/site-qrcode.svg"
+              alt="掃描開啟質悅 ZHI YUE 概念網站的 QR code"
+              width={220}
+              height={220}
+              unoptimized
+            />
+            <p>掃描 QR code 開啟此品牌概念網站。</p>
+            <a href={brand.siteUrl}>{brand.siteUrl.replace("https://", "")}</a>
+          </aside>
           <dl className="info-list">
             <div>
               <dt>地址</dt>
